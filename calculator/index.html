@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" id="ans" class="ans">
+            </td>
+        </tr>
+          <tr>
+            <td>
+                <input type="button" value="C" onclick="deleteItems()" class="ans">
+            </td>
+             <td>
+                <input type="button" value="(" onclick="main('(')" class="ans">
+            </td>
+             <td>
+                <input type="button" value=")" onclick="main(')')" class="ans">
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="button" value="7" onclick="main('7')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="8" onclick="main('8')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="9" onclick="main('9')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="+" onclick="main('+')" class="ans">
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="button" value="4" onclick="main('4')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="5" onclick="main('5')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="6" onclick="main('6')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="-" onclick="main('-')" class="ans">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="main('1')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="2" onclick="main('2')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="3" onclick="main('3')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="*" onclick="main('*')" class="ans">
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="button" value="0" onclick="main('0')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="." onclick="main('.')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="/" onclick="main('/')" class="ans">
+            </td>
+             <td>
+                <input type="button" value="=" onclick="anser()" class="ans">
+            </td>
+        </tr>
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>
