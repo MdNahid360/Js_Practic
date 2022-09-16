@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="number" min="4" max="10" required id="inpt">
+    <button type="submit" onclick="validCheck()">OK</button>
+    <h1 id="msg"></h1>
+
+    <script>
+        function validCheck() {
+            let inp = document.getElementById("inpt");
+            console.log(inp.validity);
+            if (inp.validity.rangeOverflow) {
+                inp.setCustomValidity("fined range overflow error");
+            } else if (inp.validity.rangeUnderflow) {
+                inp.setCustomValidity("fined range underflow error");
+            } else if (inp.validity.valueMissing) {
+                inp.setDefaultValidity("fined value missing error");
+            }
+            if (!inp.checkValidity()) {
+                let msg = document.getElementById("msg");
+                msg.innerHTML = inp.validationMessage;
+            }
+        }
+    </script>
+</body>
+
+</html>

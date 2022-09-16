@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparisons</title>
+    <style>
+        .main {
+            display: flex;
+            flex-wrap: unset;
+        }
+
+        .box {
+            padding: 10px;
+        }
+
+        .form-control {
+            width: 300px;
+            padding: 10px 9px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: rgb(0, 196, 33);
+            color: white;
+            text-align: center;
+            border: none;
+            width: 320px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        .bx-1 {
+            background-image: linear-gradient(rgba(2, 18, 36, 0.909), rgba(5, 27, 36, 0.703)), url(https://www.cnet.com/a/img/resize/89fa67132834fece0ccca87f0ff17effd84514f8/2018/12/13/a179fde4-547b-4c73-be94-28473e6bf67e/gettyimages-655346108.jpg?auto=webp&fit=crop&height=528&width=940);
+            background-size: cover;
+            border-right: 1px solid gray;
+            height: 100vh;
+            width: 320px;
+        }
+
+        input {
+            background: rgba(9, 73, 133, 0.272);
+            border: 1px solid rgb(1, 215, 1);
+            color: rgb(0, 255, 0);
+        }
+
+        .bx-2 {
+            background-image: linear-gradient(rgba(12, 26, 44, 0.795), rgba(5, 5, 29, 0.605)), url(https://i.dailymail.co.uk/i/pix/2014/06/26/article-2670710-1F25BA8400000578-634_964x582.jpg);
+            background-size: cover;
+            width: 1200px;
+        }
+
+        body {
+            font-family: monospace;
+            padding: 0;
+            margin: 0;
+            color: rgb(0, 215, 0);
+            background: rgb(8, 9, 26);
+        }
+
+        p {
+            line-height: 20px;
+        }
+
+        .px-3 {
+            padding: 20px 50px;
+        }
+
+        .px-2 {
+            padding: 20px 20px;
+        }
+
+        .d-flex {
+            display: flex;
+
+        }
+
+        .img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(0, 255, 0);
+            padding: 10px;
+            border-radius: 100%;
+        }
+
+        .h1 {
+            font-size: 60px;
+        }
+
+        .tools {
+            width: 70px;
+            height: 70px;
+            background: rgb(4, 186, 17);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 8px;
+            font-size: 30px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tools:hover {
+            width: 70px;
+            height: 70px;
+            background: rgba(4, 186, 16, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 239, 60);
+            border-radius: 8px;
+            font-size: 40px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid rgb(0, 255, 0);
+        }
+
+        .tool-box {
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box bx-1">
+            <form action="">
+                <h2>Practice Java script</h2>
+                <input type="text" id="nameInput" class="form-control" placeholder="Enter your name">
+                <input type="number" id="ageInput" class="form-control" placeholder="Enter your age">
+                <input type="submit" id="submit" class="btn form-control" value="Send">
+            </form><br>
+            <hr>
+            <h1>Tools</h1>
+            <div class="tool-box">
+                <div class="tools">
+                    <ion-icon name="person"></ion-icon>
+                </div>
+                <div class="tools">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                </div>
+                <div class="tools">
+                    <ion-icon name="camera"></ion-icon>
+                </div>
+                <div class="tools">
+                    <ion-icon name="call"></ion-icon>
+                </div>
+                <div class="tools">
+                    <ion-icon name="location"></ion-icon>
+                </div>
+                <div class="tools">
+                    <ion-icon name="mic"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="box px-3 bx-2">
+            <div class="d-flex">
+                <img class="img" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" width="200px" alt="">
+                <div class="info px-2">
+                    <h1 class="h1" id="name">Your Name</h1>
+                    <p>Age : <span id="age"></span></p>
+                </div>
+            </div>
+            <hr>
+            <h1>Discription :</h1>
+            <div class="d-flex">
+                <p class="tx" id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facere soluta
+                    saepe, illo sint
+                    minus fuga
+                    autem deleniti amet optio corrupti iure temporibus praesentium cumque maxime voluptate reiciendis
+                    culpa
+                    quos earum incidunt? Aliquid asperiores, sapiente dolorem maxime consequuntur veritatis vero
+                    deleniti
+                    excepturi perspiciatis repellendus voluptates rerum assumenda quo quis explicabo labore atque
+                    architecto
+                    magnam totam repellat maiores voluptate inventore. Officia magnam voluptatibus mollitia et rerum aut
+                    accusantium nesciunt aliquam id eius cum, quos atque exercitationem eligendi maxime, beatae
+                    perferendis
+                    quidem hic architecto? Ea consectetur quas, voluptatum alias perferendis facere est eveniet animi,
+                    tenetur iure aut soluta odit excepturi repudiandae. Illum corporis doloremque sunt accusantium
+                    eveniet
+                    incidunt maxime sit reiciendis temporibus dolorum, voluptas architecto hic vero sequi quidem eos
+                    suscipit tenetur molestias accusamus? Et itaque quidem molestias esse amet suscipit voluptate
+                    expedita
+                    dolor laboriosam reiciendis velit facilis, eum, aliquam, sit doloribus totam obcaecati. Eius,
+                    aliquid
+                    quia. Quis pariatur beatae nobis, doloribus officiis assumenda dolore mollitia quasi, ullam quo
+                    facere
+                    nesciunt, eius dignissimos velit. Quasi odio quibusdam delectus ex sed quaerat dignissimos labore
+                    corrupti id itaque, perspiciatis molestiae ipsam alias, earum blanditiis porro molestias voluptatum
+                    tempore nisi, quas architecto magnam commodi totam. Eaque itaque ipsa excepturi illo eos est
+                    sapiente,
+                    culpa et.
+                </p>
+                <a href="" class="p-3">
+                    <img src="https://krebsonsecurity.com/wp-content/uploads/2015/01/honeymap2.png" cursor="pointer"
+                        width="305px" height="200px" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const name = document.getElementById("nameInput");
+        const age = document.getElementById("ageInput");
+        const submit = document.getElementById("submit");
+        const setName = document.getElementById("name");
+        const setAge = document.getElementById("age");
+
+        submit.addEventListener("click", (e) => {
+            e.preventDefault();
+            setName.innerText = name.value;
+            let useAge = age.value;
+            // this is ternari operator
+            console.log(useAge >= 18 ? "your are alult" : "your are not alult");
+            if (age.value >= 18) {
+                setAge.innerText = age.value;
+            }
+            else {
+                alert("Please enter");
+            }
+        });
+          </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./comparisons.js"></script>
+</body>
+
+</html>

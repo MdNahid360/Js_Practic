@@ -42,3 +42,9 @@ console.log(sf);
 let lls = "nahid,murshed,robin,nadim,foysal";
 let aan = lls.includes("nahid")
 console.log(aan);
+
+// template string 
+const nm = "murshed";
+const year = 18;
+const text = `name :${nm} ; year : ${year};`;
+console.log(text);

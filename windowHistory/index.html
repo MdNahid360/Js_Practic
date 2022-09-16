@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+</head>
+
+<body>
+    <input type="button" value="back" onclick="goBack()">
+    <input type="button" value="forward" onclick="goForward()">
+    <h1 id="online"></h1>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goForward() {
+            window.history.forward();
+        }
+       window.addEventListener('online', function online(){
+          document.getElementById("online").innerHTML = navigator.onLine;
+       })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+</head>
+
+<body>
+    <input type="button" value="Set name cookies" onclick="setCookies('name', 'md nahid', 3)">
+    <input type="button" value="Set username cookies" onclick="setCookies('userName', 'nahid360s', 3)">
+    <input type="button" value="Get name cookies" onclick="getCookie(name)">
+    <input type="button" value="Get username cookies" onclick="">
+
+    <script>
+        let setName = document.getElementById("name");
+        let serUserName = document.getElementById("userName");
+        let getName = document.getElementById("getName");
+        let getUserName = document.getElementById("getUserName");
+
+        function setCookies(cName, cValue, exdays) {
+            const date = new Date();
+            date.setTime(date.getTime() + exdays * 24 * 60 * 60 * 1000);
+            let exp = "exadays" + date.toGMTString();
+
+            document.cookie = cName + "=" + cValue + ";" + ";path=/"
+        }
+        function getCookie(cName) {
+            console.log(document.cookie.split(","));
+        }
+    </script>
+</body>
+
+</html>
